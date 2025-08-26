@@ -73,7 +73,7 @@ if ($stmt = mysqli_prepare($conn, $query)) {
         <button class="btn btn-outline-warning btn-lg btnPersonalizado my-1" id="btnRegistro" data-bs-toggle="modal"
             data-bs-target="#modalRegistro">Registrar nuevo tripulante</button>
         <button class="btn btn-outline-warning btn-lg btnPersonalizado my-3" id="btnCerrarPrograma"
-            onclick="window.location.href='../pantallaInicial.php';">CERRAR PROGRAMA</button>
+            onclick="window.location.href='../index.php';">CERRAR PROGRAMA</button>
     </div>
 
 
