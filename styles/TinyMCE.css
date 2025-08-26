@@ -1,0 +1,165 @@
+/*======================== VARIABLES COLORES (:HOVER) ========================*/
+:root {
+    --color-principal: #f39c12;
+    --color-secundario: #ebebeb;
+    --color-hover-texto: #000;
+    --sombra-hover: 0 0 15px rgba(243, 156, 18, 0.8),
+      0 0 30px rgba(243, 156, 18, 0.5);
+  }
+
+/*======================== ESTILOS GENERALES ========================*/
+body {
+    background-color: #000; /* Fondo negro */
+    color: var(--color-secundario); /* Texto gris claro */
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*======================== ESTILOS DEL EDITOR TINYMCE ========================*/
+  .tox.tox-tinymce {
+    border: 2px solid var(--color-principal); /* Borde naranja Weyland */
+    background-color: #000; /* Fondo negro */
+    box-shadow: var(--sombra-hover); /* Sombra naranja */
+    border-radius: 0px;
+  }
+  
+  .tox .tox-toolbar,
+  .tox .tox-toolbar__primary,
+  .tox .tox-menubar {
+    background-color: #000 !important;
+    border-bottom: 1px solid var(--color-principal);
+  }
+  
+  .tox .tox-tbtn {
+    color: var(--color-principal) !important; /* Texto naranja Weyland */
+    border: 1px solid var(--color-principal);
+  }
+  
+  .tox .tox-tbtn:hover {
+    background-color: var(--color-secundario) !important; /* Gris claro al hacer hover */
+    color: var(--color-hover-texto) !important; /* Texto negro */
+    box-shadow: var(--sombra-hover); /* Sombra naranja */
+  }
+  
+  .tox .tox-collection__item {
+    background-color: #000;
+    color: var(--color-secundario);
+    border: 1px solid var(--color-principal);
+  }
+  
+  .tox .tox-collection__item:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-hover-texto);
+  }
+  
+  .tox .tox-editor-header {
+    background-color: #000;
+    color: var(--color-secundario);
+    font-weight: bold;
+  }
+  
+  .tox .tox-toolbar .tox-tbtn-group {
+    border: 1px solid var(--color-principal);
+  }
+  
+  .tox .tox-toolbar .tox-tbtn-group:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-hover-texto);
+  }
+  
+  /*======================== TEXTO DEL EDITOR ========================*/
+  .tox-edit-area {
+    background-color: #000;
+    color: var(--color-principal); /* Texto naranja */
+    border: 1px solid var(--color-principal);
+    box-shadow: var(--sombra-hover); /* Sombra naranja */
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .tox-edit-area iframe {
+    background-color: #000;
+    color: var(--color-principal); /* Texto naranja */
+  }
+  
+  /*======================== BOTONES ========================*/
+  button,
+  input[type="button"],
+  input[type="submit"] {
+    background-color: var(--color-principal); /* Naranja Weyland */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #000;
+    cursor: pointer;
+    box-shadow: var(--sombra-hover);
+  }
+  
+  button:hover,
+  input[type="button"]:hover,
+  input[type="submit"]:hover {
+    background-color: var(--color-secundario); /* Gris claro al hacer hover */
+    box-shadow: var(--sombra-hover);
+  }
+  
+  button:focus,
+  input[type="button"]:focus,
+  input[type="submit"]:focus {
+    outline: none;
+    border: 2px solid var(--color-principal); /* Borde naranja al enfocar */
+  }
+  
+  /*======================== ENLACES ========================*/
+  a {
+    color: var(--color-principal);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: var(--color-hover-texto); /* Texto negro al pasar el mouse */
+  }
+  
+  /*======================== FORMULARIOS ========================*/
+  input[type="text"],
+  input[type="date"],
+  textarea {
+    background-color: #000;
+    color: var(--color-principal); /* Texto naranja */
+    border: 1px solid var(--color-principal);
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  input[type="text"]:focus,
+  input[type="date"]:focus,
+  textarea:focus {
+    border-color: var(--color-secundario); /* Borde gris claro al enfocar */
+    box-shadow: var(--sombra-hover); /* Sombra naranja */
+  }
+  
+  /*======================== MODAL ========================*/
+  .modal-content {
+    background-color: #000;
+    color: var(--color-secundario);
+    border: 2px solid var(--color-principal);
+  }
+  
+  .modal-header {
+    background-color: #000;
+    color: var(--color-principal); /* Título de la modal en naranja */
+  }
+  
+  .modal-footer {
+    background-color: #000;
+    color: var(--color-principal);
+  }
+  
+  .modal-footer .btn {
+    background-color: var(--color-principal);
+    color: #000;
+  }
+  
+  .modal-footer .btn:hover {
+    background-color: var(--color-secundario);
+  }
+  
